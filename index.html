@@ -59,265 +59,11 @@
 			}
 		}
 
-		h1 {
-			color: #fff;
-			font-size: 1.25em;
-			font-weight: 900;
-			margin: 0 0 2em;
-		}
-
-		@media (min-width: 450px) {
-			h1 {
-				font-size: 1.75em;
-			}
-		}
-
-		@media (min-width: 760px) {
-			h1 {
-				font-size: 3.25em;
-			}
-		}
-
-		@media (min-width: 900px) {
-			h1 {
-				font-size: 5.25em;
-				margin: 0 0 1em;
-			}
-		}
-
-		p {
-			color: #fff;
-			font-size: 12px;
-		}
-
-		@media (min-width: 600px) {
-			p {
-				left: 50%;
-				position: absolute;
-				transform: translate(-50%, 0);
-				top: 90%;
-			}
-		}
-
-		@media (max-height: 500px) {
-			p {
-				left: 0;
-				position: relative;
-				top: 0;
-				transform: translate(0, 0);
-			}
-		}
-
-		p a {
-			background: rgba(255, 255, 255, 0);
-			border-bottom: 1px solid;
-			color: #fff;
-			line-height: 1.4;
-			padding: 0.25em;
-			text-decoration: none;
-		}
-
-		p a:hover {
-			background: rgba(255, 255, 255, 1);
-			color: #e1332d;
-		}
-
-		.btn {
-			color: #fff;
-			cursor: pointer;
-			font-size: 20px;
-			font-weight: 400;
-			line-height: 45px;
-			margin: 0 0 2em;
-			max-width: 160px;
-			position: relative;
-			text-decoration: none;
-			/* text-transform: uppercase; */
-			width: 100%;
-		}
-
-		@media (min-width: 600px) {
-			.btn {
-				margin: 0 1em 2em;
-			}
-		}
-
-		.btn:hover {
-			text-decoration: none;
-		}
-
-		.btn-1 {
-			background: #e02c26;
-			font-weight: 100;
-		}
-
-		.btn-1 svg {
-			height: 45px;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		.btn-1 rect {
-			fill: none;
-			stroke: #fff;
-			stroke-width: 2;
-			stroke-dasharray: 422, 0;
-			transition: all 0.35s linear;
-		}
-
-		.btn-1:hover {
-			background: rgba(225, 51, 45, 0);
-			font-weight: 900;
-			letter-spacing: 1px;
-		}
-
-		.btn-1:hover rect {
-			stroke-width: 5;
-			stroke-dasharray: 15, 310;
-			stroke-dashoffset: 48;
-			transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-		}
-
-		.btn-2 {
-			letter-spacing: 0;
-		}
-
-		.btn-2:hover,
-		.btn-2:active {
-			letter-spacing: 5px;
-		}
-
-		.btn-2:after,
-		.btn-2:before {
-			backface-visibility: hidden;
-			border: 1px solid rgba(255, 255, 255, 0);
-			bottom: 0px;
-			content: " ";
-			display: block;
-			margin: 0 auto;
-			position: relative;
-			transition: all 280ms ease-in-out;
-			width: 0;
-		}
-
-		.btn-2:hover:after,
-		.btn-2:hover:before {
-			backface-visibility: hidden;
-			border-color: #fff;
-			transition: width 350ms ease-in-out;
-			width: 70%;
-		}
-
-		.btn-2:hover:before {
-			bottom: auto;
-			top: 0;
-			width: 70%;
-		}
-
-		.btn-3 {
-			background: #e3403a;
-			border: 1px solid #da251f;
-			box-shadow: 0px 2px 0 #d6251f, 2px 4px 6px #e02a24;
-			font-weight: 900;
-			letter-spacing: 1px;
-			transition: all 150ms linear;
-		}
-
-		.btn-3:hover {
-			background: #e02c26;
-			border: 1px solid rgba(0, 0, 0, .05);
-			box-shadow: 1px 1px 2px rgba(255, 255, 255, .2);
-			color: #ec817d;
-			text-decoration: none;
-			text-shadow: -1px -1px 0 #c2211c;
-			transition: all 250ms linear;
-		}
-
-		.btn-4 {
-			/* border: 1px solid; */
-			overflow: hidden;
-			position: relative;
-			background: rgb(23 170 86);
-			border-bottom: 3px solid #0e853e;
-			/* border-right: 3px solid #a43b64; */
-			max-width: 300px;
-			border-radius: 15px;
-			height: 80px;
-			padding-top: 16px;
-			position: relative;
-
-		}
-
-		.btn-4::before {
-			font-size: 20px;
-			font-family: 'Font Awesome 5 Free';
-			content: '\f07a';
-			font-weight: 900;
-			background: #169e50;
-			padding: 16px 25px;
-			/* float: left; */
-			/* display: block; */
-			position: absolute;
-			left: 0;
-			top: 0;
-			border-bottom-left-radius: 15px;
-			border-top-left-radius: 15px;
-			border-bottom: aliceblue;
-			/* width: 50px; */
-			/* border-right: 1px solid #0e853e; */
-			color: white;
-		}
-
-
-		.btn-4 span {
-			z-index: 20;
-			padding-left: 60px;
-
-		}
-
-		.btn-4:after {
-			background: #fff;
-			content: "";
-			height: 155px;
-			left: -75px;
-			opacity: 0.2;
-			position: absolute;
-			top: -50px;
-			transform: rotate(35deg);
-			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-			width: 50px;
-			z-index: 10;
-		}
-
-		.btn-4:hover:after {
-			left: 120%;
-			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-		}
-
-		.btn-5 {
-			border: 0 solid;
-			box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-			outline: 1px solid;
-			outline-color: rgba(255, 255, 255, .5);
-			outline-offset: 0px;
-			text-shadow: none;
-			transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-		}
-
-		.btn-5:hover {
-			border: 1px solid;
-			box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-			outline-color: rgba(255, 255, 255, 0);
-			outline-offset: 15px;
-			text-shadow: 1px 1px 2px #427388;
-		}
 
 
 		/* JG button boilerplate */
 
-		button#product-addtocart-button, button#product-addtocart-button2 {
+		button#product-addtocart-button, button#product-addtocart-button2, button#product-addtocart-button3, button#product-addtocart-button4 {
 			/* display: inline-block; */
 			margin-left: auto!important;
 			margin-right: auto!important;
@@ -397,30 +143,30 @@
 			border-radius: 0px;
 			border: none;
 			background-image: none;
-			background-color: #17AA56;
+			background-color: #02A938;
 			position: relative;
-			/* padding-left:100px; */
+			padding-left:65px;
 			box-sizing: inherit;
 			transition-property: all;
 			transition-duration: 0.6s;
 			transition-timing-function: ease;
+			border-radius: 3px;
 		}
 		button#product-addtocart-button::before {
 			font-size: 20px;
 			font-family: 'Font Awesome 5 Free';
 			content: '\f07a';
 			font-weight: 900;
-			background: #169e50;
+			background: #02a035;
 			padding-left: 30px;
 			padding-right: 30px;
 			padding-top: 14px;
 			padding-bottom: 14px;
-			/* padding: 13px 22px; */
 			position: absolute;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
 			left: 0;
 			top: 0;
-			/* width: 50px; */
-			/* border-right: 1px solid #0e853e; */
 			color: white;
 			box-sizing: inherit;
 			transition-property: all;
@@ -429,59 +175,210 @@
 		}
 
 		button#product-addtocart-button:hover {
-			background-color: #00d66c;
+			background-color: #16b45a;
 		}
 
 		button#product-addtocart-button:hover::before {
-			background: #06c457;
+			background: #14a753;
 		}
+
 
 		button#product-addtocart-button2 {
 			border-radius: 0px;
 			border: none;
 			background-image: none;
-			background-color: #17AA56;
+			background-color: #16A854;
 			position: relative;
-			/* padding-left:100px; */
+			padding-left:65px;
 			box-sizing: inherit;
 			transition-property: all;
-			transition-duration: 0.3s;
+			transition-duration: 0.6s;
 			transition-timing-function: ease;
-			/* border-bottom: 3px solid #008539; */
+			border-radius: 3px;
 		}
-
-		button#product-addtocart-button2::after {
-			opacity: 0;
+		button#product-addtocart-button2::before {
 			font-size: 20px;
 			font-family: 'Font Awesome 5 Free';
 			content: '\f07a';
 			font-weight: 900;
-			/* background: #169e50; */
+			background: #109d4c;
 			padding-left: 30px;
 			padding-right: 30px;
-			padding-top: 13px;
-			padding-bottom: 12px;
+			padding-top: 14px;
+			padding-bottom: 14px;
 			position: absolute;
-			right: 90px;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			left: 0;
 			top: 0;
 			color: white;
 			box-sizing: inherit;
 			transition-property: all;
-			transition-duration: 0.5s;
+			transition-duration: 0.6s;
 			transition-timing-function: ease;
 		}
 
 		button#product-addtocart-button2:hover {
-			background-color: #00d66c;
-			/* border-bottom: none; */
-			padding-right: 25px;
+			background-color: #16b45a;
 		}
 
-		button#product-addtocart-button2:hover::after {
-			opacity: 1;
-			right: 75px;
+		button#product-addtocart-button2:hover::before {
+			background: #14a753;
 		}
 
+
+
+		button#product-addtocart-button3 {
+			border-radius: 0px;
+			border: none;
+			background-image: none;
+			background-color: none!important;
+			background: none!important;
+			position: relative;
+			padding-left:65px;
+			box-sizing: inherit;
+			transition-property: all;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
+			border-radius: 3px;
+		}
+		button#product-addtocart-button3::before {
+			font-size: 20px;
+			font-family: 'Font Awesome 5 Free';
+			content: '\f07a';
+			font-weight: 900;
+			background: #02a035;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			position: absolute;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			left: 0;
+			top: 0;
+			color: white;
+			box-sizing: inherit;
+			transition-property: all;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
+			z-index: 99;
+		}
+
+		button#product-addtocart-button3 span::before{
+			content: ' ';
+			min-width: 0%;
+			background: #02a035;
+			position:absolute;
+			left: 0;
+			height: 100%;
+			top: 0;
+			transition-property: all;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+			z-index: -1;
+		}
+
+		button#product-addtocart-button3::after{
+			content: ' ';
+			min-width: 0%;
+			background: #02A938;
+			position:absolute;
+			height: 100%;
+			width: 100%;
+			z-index: -6;
+			left: 0;
+			top: 0;
+			border-radius: 3px;
+		}
+
+		button#product-addtocart-button3:hover span::before{
+			min-width: 100%;
+		}
+
+
+
+
+		/* button 4 */
+
+		button#product-addtocart-button4 {
+			border-radius: 0px;
+			border: none;
+			background-image: none;
+			background-color: none!important;
+			background: none!important;
+			position: relative;
+			padding-left:65px;
+			box-sizing: inherit;
+			transition-property: all;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
+			border-radius: 3px;
+		}
+		button#product-addtocart-button4::before {
+			font-size: 20px;
+			font-family: 'Font Awesome 5 Free';
+			content: '\f07a';
+			font-weight: 900;
+			background: #109d4c;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			position: absolute;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			left: 0;
+			top: 0;
+			color: white;
+			box-sizing: inherit;
+			transition-property: all;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
+			z-index: 99;
+		}
+
+		button#product-addtocart-button4 span::before{
+			content: ' ';
+			min-width: 0%;
+			background: #109d4c;
+			position:absolute;
+			left: 0;
+			height: 100%;
+			top: 0;
+			transition-property: all;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+			z-index: -1;
+		}
+
+		button#product-addtocart-button4::after{
+			content: ' ';
+			min-width: 0%;
+			background: #16A854;
+			position:absolute;
+			height: 100%;
+			width: 100%;
+			z-index: -6;
+			left: 0;
+			top: 0;
+			border-radius: 3px;
+		}
+
+		button#product-addtocart-button4:hover span::before{
+			min-width: 100%;
+		}
+
+
+		
 
 
 
@@ -490,34 +387,32 @@
 
 	<section class="buttons" style="text-align: center; margin-left: auto; margin-right: auto;">
 
-
-		<!-- <a href="https://twitter.com/Dave_Conner" class="btn btn-1">
-          <svg>
-            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-          </svg>
-         Hover
-        </a> -->
-		<!--svg hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110 -->
-		<!--End of Button 1 -->
-
-		<!-- <a href="https://twitter.com/Dave_Conner" class="btn btn-2">Hover</a>  -->
-		<!--End of Button 2 -->
-
-		<!-- <a href="https://twitter.com/Dave_Conner" class="btn btn-3">Hover</a>  -->
-		<!--End of Button 3 -->
-
-		<a style="margin-left: auto; margin-right: auto;" href="https://www.junglegym.com" class="btn btn-4"><span>In
-				winkelmandje</span></a>
-		<!--End of Button 4 -->
-
-		<!-- <a href="https://twitter.com/Dave_Conner" class="btn btn-5">Hover</a>  -->
-		<!--End of Button 5 -->
-
+		<h6> in color 02A938, with a subtile color change when hovering</h6>
 		<button type="submit" title="In winkelmandje" class="action primary tocart" id="product-addtocart-button">In
 			winkelmandje</button>
-<br><br>
-			<button type="submit" title="In winkelmandje" class="action primary tocart button2" id="product-addtocart-button2">In
-				winkelmandje</button>
+		
+		<br><br>
+
+		<h6> in color 16A854, with a subtile color change when hovering</h6>
+		<button type="submit" title="In winkelmandje" class="action primary tocart" id="product-addtocart-button2">In winkelmandje</button>
+
+		<br><br>
+
+		<h6> in color 02A938, with the background color of the shopping cart icon filling the button when hovering</h6>
+		<button type="submit" title="In winkelmandje" class="action primary tocart" id="product-addtocart-button3">
+			In winkelmandje
+			<span>&nbsp;</span>
+		</button>
+
+
+
+		<br><br>
+
+		<h6> in color 16A854, with the background color of the shopping cart icon filling the button when hovering</h6>
+		<button type="submit" title="In winkelmandje" class="action primary tocart" id="product-addtocart-button4">
+			In winkelmandje
+			<span>&nbsp;</span>
+		</button>
 
 	</section>
 
